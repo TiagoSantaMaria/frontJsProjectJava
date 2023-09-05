@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kiosco Virtual</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kiosco Virtual</h1>
+</header>
+
+<div class="container">
+    <h2>Bienvenido al Kiosco Virtual</h2>
+
+    <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Buscar productos...">
+        <button type="submit">Buscar</button>
+    </form>
+
+    <div id="searchResults">
+        <!-- Aquí se mostrarían los resultados de la búsqueda -->
+    </div>
+</div>
+
+<script>
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+    const searchResults = document.getElementById('searchResults');
+
+    searchForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar que el formulario se envíe
+        const searchTerm = searchInput.value;
+
+        // Aquí podrías realizar la búsqueda y mostrar los resultados en searchResults
+        // Por simplicidad, aquí simplemente mostramos un mensaje de ejemplo
+        searchResults.innerHTML = <p>Resultados de búsqueda para: ${searchTerm}</p>;
+    });
+</script>
+
+</body>
+</html>

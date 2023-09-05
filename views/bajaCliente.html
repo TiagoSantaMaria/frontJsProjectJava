@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baja Cliente</title>
+</head>
+<body>
+
+    <h2>Dar de Baja Cliente</h2>
+    
+    <form action="procesar_baja.php" method="post">
+        <label for="dniCliente">DNI del Cliente:</label><br>
+        <input type="text" id="dniCliente" name="dniCliente" required><br><br>
+    
+        <label for="contrasena">Contraseña:</label><br>
+        <input type="password" id="password" name="contrasena" required><br><br>
+    
+        <label for="motivo">Motivo de la Baja:</label><br>
+        <textarea id="motivo" name="motivo" rows="4" cols="50" required></textarea><br><br>
+    
+        <input type="submit" id="darBaja" value="Dar de Baja">
+    </form>
+    <script src="../js/bajaCliente.js"></script>
+    </body>
+</html>

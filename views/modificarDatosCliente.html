@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Datos</title>
+</head>
+<body>
+
+    <h2>Modificar Datos de Cliente</h2>
+    
+    <form action="procesar_modificacion.php" method="post">
+
+        <label for="nuevoNombre">Nuevo Nombre:</label><br>
+        <input type="text" id="nuevoNombre" name="nuevoNombre"><br><br>
+    
+        <label for="nuevoApellido">Nuevo Apellido:</label><br>
+        <input type="text" id="nuevoApellido" name="nuevoApellido"><br><br>
+    
+        <label for="nuevoMail">Nuevo Correo electrónico:</label><br>
+        <input type="email" id="nuevoMail" name="nuevoMail"><br><br>
+    
+        <label for="password">Nueva Contraseña:</label><br>
+        <input type="password" id="newPassword" name="password" required><br><br>
+    
+
+        <input type="submit" id="modificarDatos" value="Modificar Datos">
+    </form>
+    <script src="../js/modificarDatosClientes.js"></script>
+    </body>
+</html>
